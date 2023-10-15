@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="answer.css">
 </head>
 <body>
-    <h1><%= sleepQuality %></h1>
+    <div class="top-container">
+        <div class="navbar">
+            <div class="nav-logo">
+                <img src="logo.png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="answer-card">
+            <div class="answer-top">
+                <div class="answer-heading heading">
+                    <h1>Your sleep quality is:</h1>
+                </div>
+                <div class="answer">
+                    <div class="answer-answer-container">
+                        <p><%= Math.trunc(sleepQuality) %></p>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback-cards">
+                <div class="feedback-card feedback-card-1">
+                    <div class="feedback-card-top">
+                        <h2>Poor</h2>
+                        <hr>
+                    </div>
+                    <div class="feedback-card-heading heading">
+                        <h2>(0 to 3)</h2>
+                    </div>
+                    <div class="feedback-card-text">
+                        <p>Here are some suggestions to improve sleep:</p>
+                        <ul class="suggestions-list">
+                            <li>Establish a regular sleep schedule</li>
+                            <li>Create a relaxing bedtime routine</li>
+                            <li>Make your sleeping environment comfortable</li>
+                            <li>Avoid screen time before bed</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feedback-card feedback-card-2">
+                    <div class="feedback-card-top">
+                        <h2>Moderate</h2>
+                        <hr>
+                    </div>
+                    <div class="feedback-card-heading heading">
+                        <h2>(4 to 7)</h2>
+                    </div>
+                    <div class="feedback-card-text">
+                        <p>Here are some suggestions to improve sleep:</p>
+                        <ul class="suggestions-list">
+                            <li>Continue with your sleep schedule</li>
+                            <li>Limit caffeine and alcohol intake</li>
+                            <li>Practice relaxation techniques before bedtime</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feedback-card feedback-card-3">
+                    <div class="feedback-card-top">
+                        <h2>Excellent</h2>
+                        <hr>
+                    </div>
+                    <div class="feedback-card-heading heading">
+                        <h2>(7 to 10)</h2>
+                    </div>
+                    <div class="feedback-card-text">
+                        <p>Here are some suggestions to improve sleep:</p>
+                        <ul class="suggestions-list">
+                            <li>Keep a consistent sleep schedule</li>
+                            <li>Engage in regular physical activity</li>
+                            <li>Create a peaceful and comfortable sleep environment</li>
+                            <li>Avoid heavy meals before bedtime</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 </html>
