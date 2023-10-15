@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-container">
+        <div class="navbar">
+            <div class="nav-logo">
+                <img src="logo.png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="form" id="product">
+            <div class="container">
+                <div class="top">
+                    <div class="logo">
+                        <img src="logo.png" alt="logo">
+                    </div>
+                    <div class="heading">
+                        <p>Let's get Started!</p>
+                    </div>
+                </div>
+                <form action="/quality" method="post">
+                  <label>GENDER</label>
+                  <select name="gender" id="gender">
+                    <option value="none" selected disabled hidden>Choose your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                  <label>AGE</label>
+                  <input type="number" name="age">
+                  <label>OCCUPATION</label>
+                  <select name="occupation" id="occupation">
+                    <option value="none" selected disabled hidden>Choose your occupation</option>
+                    <option value="accountant">Accountant</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="engineer">Engineer</option>
+                    <option value="lawyer">Lawyer</option>
+                    <option value="manager">Manager</option>
+                    <option value="nurse">Nurse</option>
+                    <option value="sales-representative">Sales Representative</option>
+                    <option value="salesperson">Salesperson</option>
+                    <option value="scientist">Scientist</option>
+                    <option value="software-engineer">Software Engineer</option>
+                    <option value="teacher">Teacher</option>
+                  </select>
+                  <label>SLEEP DURATION (hrs)</label>
+                  <input type="number" name="sleep" placeholder="Enter the no. of hours you sleep per day">
+                  <label>PHYSICAL ACTIVITY (min)</label>
+                  <input type="number" name="physical" placeholder="Enter the no. of minutes you engage in physical activity daily">
+                  <label>BMI</label>
+                  <select name="bmi" id="bmi">
+                    <option value="none" selected disabled hidden>Select your BMI classification</option>
+                    <option value="underweight">Underweight</option>
+                    <option value="normal">Normal</option>
+                    <option value="overweight">Overweight</option>
+                  </select>
+                  <label>HEART RATE (bpm)</label>
+                  <input type="number" name="heart" placeholder="Enter your heart rate in beats per minute">
+                  <label>DAILY STEPS</label>
+                  <input type="number" name="daily" placeholder="Enter the no. of steps you take per day">
+                  <label>SLEEP DISORDER</label>
+                  <select name="sleepD" id="sleepD">
+                    <option value="none" selected>None</option>
+                    <option value="insomnia">Insomnia</option>
+                    <option value="sleep-apnea">Sleep Apnea</option>
+                  </select>
+                  <button type="submit" class="form-btn">SUBMIT</button>
+                </form>
+             </div>
+        </div>
+</body>
+</html>
