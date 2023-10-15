@@ -22,7 +22,7 @@ body {
     padding-bottom: 20px;
 }
 
-/**********************************************NAV-BAR***************************************/
+/***********************************************NAV-BAR****************************************/
 
 .navbar {
   display: flex;
@@ -52,33 +52,33 @@ body {
     transform: scale(1.2);
 }
 
-.navbar ul {
+ul {
   display: flex;
   justify-content: space-between;
   width: 50%;
 }
 
-.navbar li {
+li {
   list-style-type: none;
   font-size: 20px;
   transition: 0.19s cubic-bezier(.45,.05,.55,.95);
   font-family: 'Young serif', serif;
 }
 
-.navbar li:hover {
+li:hover {
     transform: scale(1.2);
 }   
   
-.navbar a {
+a {
   text-decoration: none;
   color: #f3ffff;
 }
   
-.navbar a:hover {
+a:hover {
   color: #a8e520;
 }
 
-/*******************************************HOME PAGE************************************/
+/********************************************HOME PAGE*************************************/
 
 .home {
     display: flex;
@@ -135,7 +135,7 @@ body {
     background-size: cover;
 }
 
-/*******************************************INPUT FORM************************************/
+/********************************************INPUT FORM*************************************/
 
 .form {
   display: flex;
@@ -231,5 +231,5 @@ select:hover {
 }
 
 .form-btn:hover {
-  box-shadow: none;
+  box-shadow: none;
 }
